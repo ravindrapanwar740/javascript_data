@@ -1,0 +1,58 @@
+<p>Welcome</p>
+<input type="number" id="vl1" placeholder="Enter 1st value"><br>
+<input type="number" id="vl2" placeholder="Enter 2st value"><br>
+<!-- <input type="text" id="result"><br> -->
+<button type="button" id="btn" onclick="Add()">Addition</button>
+<button type="button" id="btn2" onclick="Sub()">Subtraction</button><br>
+<button type="button" id="btn2" onclick="Multi()">Multiplication</button>
+<button type="button" id="btn2" onclick="Devide()">Division</button><br>
+<script>
+    function Add() {
+        var x = document.getElementById("vl1").value;
+        var y = document.getElementById("vl2").value;
+        var xx = parseInt(x);
+        var yy = parseInt(y);
+        var z = xx + yy;
+      // var r= document.getElementById("result").innerHTML=z;
+
+       document.write(z);
+
+    }
+    function Sub() {
+        var x = document.getElementById("vl1").value;
+        var y = document.getElementById("vl2").value;
+        var xx = parseInt(x);
+        var yy = parseInt(y);
+        var z = xx - yy;
+        //document.getElementById("btn").innerHTML(z);
+
+        document.write(z);
+
+    }
+
+    function Multi() {
+        var x = document.getElementById("vl1").value;
+        var y = document.getElementById("vl2").value;
+        var xx = parseInt(x);
+        var yy = parseInt(y);
+        var z = xx * yy;
+        //document.getElementById("btn").innerHTML(z);
+
+        document.write(z);
+
+    }
+    function Devide() {
+        var x = document.getElementById("vl1").value;
+        var y = document.getElementById("vl2").value;
+        var xx = parseInt(x);
+        var yy = parseInt(y);
+        var z = xx / yy;
+        //document.getElementById("btn").innerHTML(z);
+
+        document.write(z);
+
+    }
+//sdocument.write(z);
+
+
+</script>

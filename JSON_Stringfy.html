@@ -1,0 +1,27 @@
+<!--<p id="demo"></p>
+<script>
+let str={"name":"ram","age":"20","city":"indore"};
+let obj=JSON.stringify(str);
+document.getElementById("demo").innerHTML=obj;
+
+//The JSON.stringify() method converts JavaScript objects into strings.
+//The JSON.parse() method parses a string and returns a JavaScript object.
+</script>-->
+
+<p id="demo"></p>
+
+<script>
+var obj = { "name":"Ram", "age":"20", "city":"indore"};
+
+var text = JSON.stringify(obj, function (key, value) 
+
+{
+  if (key == "city") {
+    return value.toUpperCase();
+  } else {
+    return value;
+  }
+});
+
+document.getElementById("demo").innerHTML = text.split(","); 
+</script>

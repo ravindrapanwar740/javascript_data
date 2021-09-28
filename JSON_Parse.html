@@ -1,0 +1,41 @@
+<p id="demo"></p>
+<p id="demo1"></p>
+<input type="text" id="txt">
+<input type="button" value="Click" onclick="check()" />
+<script>
+    // let text = '{"name":"ram"."age":"20"."city":"indore"}';
+
+
+    //  var obj=JSON.parse(text);
+    // document.getElementById("demo").innerHTML = text;
+    // var text = '{ "name":"John", "age":"39", "city":"New York"}';
+    function check() {
+        const x = document.getElementById("txt").value;
+      //  const y = JSON.parse(x);
+
+       const z = x.toUpperCase();
+        /// const z = x.ignore;
+
+        document.getElementById("demo1").innerHTML = z;
+
+    }
+
+
+    // var obj = JSON.parse(text, function (key, value) {
+    //     if (key == "name") {
+    //         return value.toUpperCase();
+    //     }
+    //     else if (key == "city") {
+    //         return value.toUpperCase();
+    //     }
+
+
+    //     else {
+    //         return value;
+
+    //     }
+    // });
+
+
+
+</script>

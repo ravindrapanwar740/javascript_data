@@ -1,0 +1,87 @@
+
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="utf-8">
+   </head>
+  
+<body style="text-align: center;">
+      
+  
+    <h3 id="po">Input Array Elements</h3>
+    <form class="" action="index.html" method="post">
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <input type="text" name="array[]" value="" /><br>
+        <button type="button" name="button" onclick="Geeks()">
+            Submit
+        </button>
+    </form>
+    <br>
+  
+    <p id="par"></p>
+  
+    <script type="text/javascript">
+      var k = "The values are :";
+        function Geeks() {
+            var input = document.getElementsByName('array[]');
+  
+            for (var i = 0; i < input.length; i++) {
+                var a = input[i];
+                k = k + "array[" + i + "].value= "
+                                   + a.value + " "+"<br>";
+            }
+  
+            document.getElementById("par").innerHTML = k;
+            document.getElementById("po").innerHTML = "Output";
+        }
+    </script>
+</body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="text" id="ipy" onfocus="check()"/> -->
+<!-- <input type="text" id>
+<script>
+// function check()
+// {
+// var x=document.getElementById("ipy");
+// x.value=x.value.toUpperCase();
+// }
+
+
+
+
+</script>-->
+
+

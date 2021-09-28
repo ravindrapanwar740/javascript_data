@@ -1,0 +1,24 @@
+<script>
+    
+    let n=123, r, b = 0;
+    let temp=n;
+    while (n>0) {
+        r = n % 10;//9 8
+        n = Math.floor(n / 10);
+        b = r + b * 10;
+    }
+
+if(temp==b)
+{
+    document.write("Palindome=",b);
+        //console.log('value of temp',temp)
+}
+else
+{
+document.write(+b+" is not palindrome");
+
+}
+    
+    
+
+</script>

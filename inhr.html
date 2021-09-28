@@ -1,0 +1,36 @@
+<script>
+    class Aa {
+        detail1(id, name) {
+
+            this.id = id;
+            this.name = name;
+            //return(this.id,this.name)
+document.writeln(this.id+" "+this.name)
+
+        }
+        //constructor(id, name) {
+        // this.id = id;
+        //this.name = name;
+        //return(id,name)
+        //}
+
+    }
+    class Bb extends Aa {
+        detail() {
+            var id1 = 102;
+            var name1 = "Shyam";
+            document.write(id1 + " " + name1);
+            //return (id1,name1)
+        }
+
+    }
+    var c = new Bb();
+    c.detail1(101, "Ram");
+    //var c3;
+    //document.write(c3);
+    c.detail();
+    //var c1;
+    //c1.document.writeln(c1);
+
+
+</script>

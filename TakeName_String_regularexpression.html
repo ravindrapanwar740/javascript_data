@@ -1,0 +1,52 @@
+<p id="demo"></p>
+<!-- <form action="projectpalindrom.html"> -->
+<input id="inp" type="text">
+<input type="button" value="Click" onclick="check()" />
+</form>
+<script>
+    function check() {
+
+        let y = document.getElementById("inp").value;
+        //let x=y.toString(y);
+        let x = y.match(/[a-z]/g);
+
+        if (x) {
+            //    document.getElementById("demo").innerHTML = "U r string values are " + x;
+            alert("u r values are " + x)
+        }
+        else {
+            alert("plz enter only string")
+        }
+    }
+
+
+</script>
+
+
+<!-- <script>
+    // let name = prompt("Enter ur name", "");
+    function check()
+    {
+
+let y=document.getElementById("inp").value;
+let x=y.match(/\d/g);
+if(x)
+    {
+        document.getElementById("demo").innerHTML="U r numeric values are "+x;
+
+    }
+    else{
+        alert("plz enter only numeric digit")
+    }
+
+
+    } -->
+
+<!-- 
+    // if (name != null) {
+    //     document.getElementById("demo").innerHTML = "Hello " + name + " Welcome";
+    //     // document.getElementById("demo").value=name;
+    //     console.log('value', name);
+    // }
+    
+</script>-->

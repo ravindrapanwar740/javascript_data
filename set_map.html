@@ -1,0 +1,47 @@
+<p id="demo"></p>
+<script>
+    // const name=new Set();
+    // name.add("H");
+    // name.add("A")
+    // name.add("E");
+    // const text="";
+    // for(const x of name.values())
+    // {
+    // text+=x+"<br>";
+    // }
+    // document.getElementById("demo").innerHTML=text;
+
+    // const name = new Set(["a", "b", "c"]);
+    // let text = "";
+    // for (const x of name.values()) {
+    //     text += x + "<br>"
+
+    // }
+
+
+    // document.getElementById("demo").innerHTML = text;
+
+
+    // const letters = new Set(["a", "b", "c"]);
+
+    // let text = "";
+    // for (const x of letters.values()) {
+    //     text += x + "<br>";
+    // }
+
+    // document.getElementById("demo").innerHTML = text;
+
+
+    const name = new Map();
+    name.set("apple", 101);
+    name.set("mango", 102);
+    name.set("banana", 103);
+    name.delete("banana");
+    let text="";
+    for (const x of name.entries()){
+text+=x+"   ";
+    }
+        document.getElementById("demo").innerHTML =text.split(",");
+
+
+</script>

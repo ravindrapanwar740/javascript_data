@@ -1,0 +1,26 @@
+<p id="demo"></p>
+<!--<script>
+const name=new Map([
+["Ram",101],
+["Shyam",102],
+["Rahul",103],
+])
+document.getElementById("demo").innerHTML=name.get("Ram");
+
+
+</script>-->
+
+<script>
+    const name = new Map();
+    name.set("Ram", 101);
+    name.set("Shyam", 102);
+    name.set("Rahul", 103);
+    name.delete("Ram");
+    let text = "";
+    for (const x of name.entries()) {
+       text += x + "<br>"
+     }
+    //name.delete("Shyam");
+    document.getElementById("demo").innerHTML = text;
+//document.getElementById("demo").innerHTML=name.has("Shyam"); //false
+</script>

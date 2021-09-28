@@ -1,0 +1,34 @@
+<p id="demo"></p>
+<!--<script>
+const name=new Set(["a","b","c"]);
+document.getElementById("demo").innerHTML=name.size;
+
+</script>-->
+<!--<script>
+const name=new Set();
+name.add("a");
+name.add("b");
+name.add("c");
+name.add("d");
+document.getElementById("demo").innerHTML=name.size;
+</script>-->
+
+<script>
+const name=new Set();
+const x="a";
+const y="b";
+const z="c";
+const p="d";
+const q="e";
+const r="f";
+
+name.add(x);
+name.add(y);
+name.add(z);
+name.add(p);
+name.add(q);
+name.add(r);
+name.delete(y);
+name.has(z);
+document.getElementById("demo").innerHTML=name.size;
+</script>

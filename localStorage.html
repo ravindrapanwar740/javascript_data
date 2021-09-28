@@ -1,0 +1,37 @@
+<p id="demo"></p>
+
+<!-- <script>
+var x='{"name":"Ram","age":20}';
+var y=JSON.parse(x);
+
+document.getElementById("demo").innerHTML=y.name+" "+y.age;
+</script> -->
+
+<script>
+    var x = '["name","Ram","age",20]';
+    var y = JSON.parse(x);
+    var text = "";
+    for(const t of y){
+
+       text+=x+"<br>" 
+    }
+    document.getElementById("demo").innerHTML = t;
+
+</script>
+
+
+<!-- <script>
+    var x={"name":"Ram","age":20};
+    var y=JSON.stringify(x);
+    
+    document.getElementById("demo").innerHTML=y;
+
+</script> -->
+
+<!-- <script>
+    var x=["name","Ram","age",20];
+    var y=JSON.stringify(x);
+    
+    document.getElementById("demo").innerHTML=y;
+
+</script> -->

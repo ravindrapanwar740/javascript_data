@@ -1,0 +1,131 @@
+<table>
+    <!--<th> 
+        Calculator
+    </th>-->
+    <input type="text" id="tf" placeholder="Values"><br>
+    <!--<input type="text" id="tf2" placeholder="Enter 2nd value"><br>-->
+    <!--<input type="text" id="tf" placeholder="Result"><br>-->
+
+    <tr>
+        <td>
+            <button type="button" id="1" onclick="demo(this.id)">1</button>
+            <button type="button" 1d="2" onclick="demo(this.id)">2</button>
+            <button type="button" id="3">3</button>
+            <button type="button" id="4">/</button>
+        </td>
+
+
+    </tr>
+    <tr>
+        <td>
+            <button type="button" id="5">4</button>
+            <button type="button" id=>5</button>
+            <button type="button">6</button>
+            <button type="button">*</button>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button">-</button>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="tf1">0</button>
+            <button type="button">.</button>
+            <button type="button" id="add" onclick="demo()">+</button>
+            <button type="button">=</button>
+
+
+        </td>
+    </tr>
+</table>
+
+<script>
+     //function for displaying values
+     function dis(val)
+    {
+    document.getElementById("edu").value+=val
+     }
+    //function for evaluation
+    function solve()
+    {
+    let x = document.getElementById("edu").value
+    let y = eval(x)
+    document.getElementById("edu").value = y
+    }
+    //function for clearing the display
+    function clr()
+    {
+    document.getElementById("edu").value = ""
+    }
+    </script>
+    
+   <!-- function add(val){
+
+        document.getElementById("tf").value+=val;
+
+
+
+    }
+/*//function add(click_id)
+    function add(){
+    //var reply_click = function() {
+        document.getElementById("tf").innerHTML="hello";
+//this.click_id;
+        //var y = document.getElementById("1").value;
+console.log('Button value', x);
+        //var y=document.getElementById("tf2").value("2");
+        var xx=parseInt(y);
+//var yy=parseInt(y);
+        //var z=xx+yy;
+        document.write(""+this.id+);
+
+
+    }
+    //document.getElementById("1").onclick=reply_click;
+    function subt()
+    {
+
+
+
+    }
+    function multi()
+    {
+
+
+        
+    }
+    function devide()
+    {
+
+
+        
+    }
+    /*tf()
+    {
+        var x = document.getElementById("1").value;
+        document.write(x);
+
+    }*/
+
+/*function demo(id)
+{
+var x=document.getElementById("tf").value;
+var x1=x.getElementById("1").value;
+//this.getElementById("1");
+var x2=x.getElementById("2").value;
+var xx=parseInt(x1);
+var xx=parseInt(x2);
+var xx=x1+x2;
+
+document.writeln(xx);
+}*/
+</script>-->

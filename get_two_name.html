@@ -1,0 +1,149 @@
+<style>
+h1{color: black;}
+/* body{background-color: aqua;} */
+input{text-align: center;}
+p {color: #ff0000;}
+form{align-content: center;}
+</style>
+<p id="demo"></p>
+<p id="demo1"></p>
+<marquee scrollamount=20 direction=left><h1>Enter name Password to Login</h1></marquee>
+
+<form id="frm1" action="project.html">
+
+  Enter Name:<input type="text" id="tpy" value="" placeholder="Enter name" required><br>
+  Enter Password:<input type="password" id="pwd" value="" placeholder="Enter pwd" required><br>
+  <input type="button" id="btn" value="Submit" onclick="add(value)" />
+
+</form>
+
+
+<script>
+  function add(id) {
+    const y = document.getElementById("tpy").value;
+
+    const yy = y.match(/[a-z]/g)
+    if (yy) {
+      true;
+    }
+    else {
+     // alert("enter only string")
+     const x1=Error("Enter Only string values");
+     document.getElementById("demo").innerHTML=x1;
+     return false;
+    }
+
+    const x = document.getElementById("pwd").value;
+    var l = x.length;
+
+    if (l == 5) {
+      document.getElementById("btn");
+      return true;
+    }
+    else {
+      const x1=Error("Enter 5 digit password");
+     document.getElementById("demo1").innerHTML=x1;
+      return false;
+    }
+  }
+
+</script>
+
+
+<!-- <button id="button_A">Press me</button>
+<h3 id="heading_A"></h3>
+
+<script>
+
+  const buttonA = document.querySelector('#button_A');
+  const headingA = document.querySelector('#heading_A');
+
+  buttonA.onclick = function () {
+    let name = prompt('What is your name?');
+    alert('Hello ' + name + ', nice to see you!');
+    headingA.textContent = 'Welcome ' + name;
+  }
+
+
+
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //   const x = document.forms["frm1"];
+    // let text = "";
+    // for (let i = 0; i < x.length ;i++) {
+    //   text += x.elements[i].value + "<br>";
+    // }
+    // document.getElementById("demo1").value+=document.getElementById("demo").txt; -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p id="demo1"></p>
+  <p id="d1"></p> 
+  <button type="button" id="btn" onclick="click()">Submit</button>
+  
+   <form id="frm1" action="project.html">
+   First name: <input id="name" type="text" name="fname" ><br>
+    Password: <input id="pwd" type="password" name="pname"><br><br> 
+
+    
+  </form>
+   <p>These are the values of each element in the form:</p> 
+
+  <p id="demo"></p>
+
+<script>
+ function click()
+    {
+      document.write("Hello");
+    } -->
+<!--   const y = document.getElementById("name").value;<input type="button" id="btn" value="Ok" onclick="click()"/>
+      document.getElementById("d1").innerHTML = y;
+      console.log('Value of xx', y);
+      const len=y.length();
+      console.log('value of len',len)
+       if(len==10)
+       {
+         document.getElementById("inp").value=y;
+          //alert("enter 10 digit pwd");
+         //return true;
+//         }
+//         else{
+//           alert("enter 10 digit pwd");
+//          return false;
+//         }
+//     }
+const x = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo1").value+=document.getElementById("demo").txt;
+  </script> -->

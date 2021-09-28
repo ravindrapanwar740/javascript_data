@@ -1,0 +1,13 @@
+<script>
+    var h, d, u, i, arm;
+    for (i = 100; i < 1000; i++) {
+        h = parseInt(i / 100);
+        d = parseInt((i / 10) % 10);
+        u = parseInt(i % 10);
+        arm = h * h * h + d * d * d + u * u * u;
+        if (arm == i) {
+        document.write(" " + arm);
+        }
+    }
+
+</script>

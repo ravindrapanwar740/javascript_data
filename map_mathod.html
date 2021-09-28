@@ -1,0 +1,12 @@
+<p id="demo"></p>
+<script>
+const arr=[4,9,16,25];
+// const x=arr.map(Math.sqrt);
+// document.getElementById("demo").innerHTML=x;
+const x=arr.map(check);
+document.getElementById("demo").innerHTML=x;
+function check(num)
+{
+    return num*100;
+}
+</script>

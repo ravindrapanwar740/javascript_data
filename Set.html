@@ -1,0 +1,46 @@
+<p id=demo></p>
+<script>
+    //    const letters=new Set();
+    // let letters = new Set(["a", "b", "c"]);
+    // let text = " ";
+    // let text="";
+    // for(const x of letters)
+    // {
+    // text+=value+"<br>"
+
+    // }
+    // document.getElementById("demo").innerHTML=text;
+    //letters.add("a");
+    //letters.add("b");
+    //letters.add("b");
+    // letters.forEach(function (value) {
+    //     text += value+"<br>";
+    // })
+
+    // for(const x of letters.values())
+    // {
+    //     text+=x+"<br>";
+    // }
+const lettres=new Map([
+["ram",101],
+["shyam",102],
+["radha",103]
+
+]
+    );
+
+let text="";
+// for(const x of lettres.entries())
+// {
+// text+=x+"<br>";
+
+//  }
+lettres.forEach(function(value,key)
+{
+text+=key+"="+value+"<br>";
+
+})
+//document.getElementById("demo").innerHTML =lettres.get("ram");
+//document.getElementById("demo").innerHTML =lettres.size;
+document.getElementById("demo").innerHTML =text;
+</script>

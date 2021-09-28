@@ -1,0 +1,27 @@
+<p id="pr"></p>
+<input type="button" value="Click" onclick="plmd()" />
+<script>
+    function plmd() {
+        var h, d, u, n, arm, i;
+        for (i = 100; i <= 1000; i++) {
+
+            h = parseInt(i / 100);//1
+
+            d = (i / 10) % 10;//0
+            d = parseInt(d);
+
+            u = i % 10;//1
+            u = parseInt(u);
+
+            //arm = u * 100 + d * 10 + h * 1;//101 111
+            arm = u * 10 + d * 100 + h * 1;
+            // i = u;
+            arm = parseInt(arm);
+
+            if (arm == i) {
+                document.write("<br>" + i);
+            }
+        }
+    }
+
+</script>

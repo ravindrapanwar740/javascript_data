@@ -1,0 +1,186 @@
+<style>
+  h1 {
+    color: blue;
+    height: 30px;
+  }
+
+  input {
+    color: blueviolet;
+    height: 20px;
+
+  }
+</style>
+<marquee scrollamount=20 direction=right>
+  <h1>Welcome User</h1>
+</marquee>
+
+<input id="tpy" type="text" placeholder="Enter any Value"><br>
+
+<p id="demo"></p>
+<input type="button" id="btn" value="Palindrom" onclick="plndr()" />
+<input type="button" id="btn1" value="3 Digit Armstrng" onclick="armstrng()" />
+<input type="button" id="btn2" value="Reverse no." onclick="revrse()" />
+<input type="button" id="btn3" value="Odd Even" onclick="oddeven()" /><br>
+<input type="button" id="btn4" value="Date" onclick="date()" />
+
+
+<script>
+  function plndr() {
+    let x = document.getElementById("tpy").value;
+    let n = parseInt(x);
+    // if (n == '') {
+    //   window.alert("only numeric value")
+    // }
+    // else {
+
+    let r, s = 0;
+    let temp = n;
+    while (n > 0) {
+      r = n % 10;
+      n = Math.floor(n / 10);
+      s = r + (s * 10);
+    }
+    if (temp == s) {
+      document.write("palindrom");
+    }
+    else {
+      document.write("not palindrom");
+    }
+
+  }
+  function armstrng() {
+    let x = document.getElementById("tpy").value;
+    let n = parseInt(x);
+    let r, s = 0;
+    let temp = n;
+    while (n > 0) {
+      r = n % 10;
+      n = Math.floor(n / 10);
+      s = s + (r * r * r);
+      // s=s+Math.pow(r,r);
+    }
+    if (temp == s) {
+      document.write("armstrng number");
+    }
+    else {
+      document.write("not armstrng number");
+    }
+
+  }
+  function revrse() {
+    let x = document.getElementById("tpy").value;
+    let n = parseInt(x);
+    let r, s = 0;
+    //let temp = n;
+    while (n > 0) {
+      r = n % 10;
+      n = Math.floor(n / 10);
+      s = r + (s * 10);
+      console.log('Value of s', s)
+    }
+
+    document.getElementById("demo").innerHTML = s;
+
+
+  }
+  function oddeven() {
+    let x = document.getElementById("tpy").value;
+    let n = parseInt(x);
+    if (n % 2 == 0) {
+      document.write("Even")
+    }
+    else {
+
+      document.write("Odd")
+    }
+
+
+  }
+  function date() {
+    document.write(Date());
+  }
+ // }
+</script>
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<body>  
+   <h1>Welcome to my project</h1>
+<p>Enter ur Name and Password to log in</p>
+<p id="namesname"></p>
+<form name="myform" method="post" action="" onsubmit="return submit()" > 
+<input type="text" id="tpy" placeholder="Enter name">
+<input type="password" id="tpy2" placeholder="Enter Password">
+<input type="button" value="Register" onclick="submit()" />
+</form>
+</body>
+
+    <script>
+    function submit() {
+        // let n1=document.getElementById("tpy").va
+        document.write("Helllo Woorrlddd")
+        var name = document.myform.name.value;
+        var password = document.myform.password.value;
+//var name = document.name.value;
+  //      var password = document.password.value;
+
+        if (name == null || name == "") {
+            alert("Name can't be blank");
+            return false;
+        } else if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+    }  
+
+
+
+</script>-->
+
+<!--<script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+    </head>
+    <body>
+    
+    <h2>JavaScript Validation</h2>
+    
+    <form name="myForm" action="palindrom_Dynamic.html" onsubmit="return validateForm()">
+      Name: <input type="text" name="fname">
+      <input type="submit" value="Submit">
+    </form>
+  -->
